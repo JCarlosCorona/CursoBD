@@ -1,0 +1,3 @@
+pwd Muestra el nobre de la capeta de trabajo actual
+mkdir Crear una nueva carpeta
+cd Cambia a una nueve carpeta
