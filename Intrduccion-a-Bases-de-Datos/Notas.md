@@ -1,5 +1,5 @@
 # Notas Base de Datos  
-#### Chuleta  
+## Chuleta  
 - Borrar Recursivo: rm -r  
 - Agregar contenido: echo  
 - Ver contenido de un archivo: cat  
@@ -14,5 +14,10 @@
 - Hacer búsquedas en texto con Regex: grep  
 
 ## Conceptos
-- Formatos para almacenar datos
-        - CSV y JSON
+- Formatos para almacenar datos.  
+        - CSV y JSON.  
+- Tabla: Columnas(campos, atributos) y Registros(renglones, filas, tuplas).  
+- PLSQL: Lenguaje de programación para SQL.  
+- Modo cliente-servidor: 
+- 
+### Sesión 3: MySQL
