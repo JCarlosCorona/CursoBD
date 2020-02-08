@@ -1,5 +1,5 @@
-# Notas Base de Datos  
-## Chuleta  
+# Notas del Curso  
+## Chuleta Shell  
 - Borrar Recursivo: rm -r  
 - Agregar contenido: echo  
 - Ver contenido de un archivo: cat  
@@ -13,11 +13,17 @@
 - Contar caracteres: wc  
 - Hacer búsquedas en texto con Regex: grep  
 
-## Conceptos
+## Conceptos teóricos
 - Formatos para almacenar datos.  
         - CSV y JSON.  
 - Tabla: Columnas(campos, atributos) y Registros(renglones, filas, tuplas).  
 - PLSQL: Lenguaje de programación para SQL.  
-- Modo cliente-servidor: 
-- 
+- Sistemas de gestor de base de datos: existen dos tipos que pueden instalarse en un servidor.  
+  - Relacionales (SQL).  
+  - No Relacionales (NoSQL).  
+- Clientes: las consultas son una forma de buscar y recopilar  información de una BBDD.  
+- Miniconda: genera ambientes de trabajo para trabajar en versiónes especificas de software.  
+- MyCli: Herramienta de código abierto para hacer consultas en SQL en la consola.  
+
 ### Sesión 3: MySQL
+
