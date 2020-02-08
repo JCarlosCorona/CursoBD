@@ -2,17 +2,17 @@
 #### Chuleta  
 - Borrar Recursivo: rm -r  
 - Agregar contenido: echo  
-- Ver contienido de un archivo: cat  
+- Ver contenido de un archivo: cat  
 - Cambiar nombre de archivo: mv  
 - Para abrir archivos grandes: less  
 - Para ver la docu de cun comando: man  
-- Para ver el arbol de archivos: tree  
+- Para ver el árbol de archivos: tree  
 - Para ejecutar los archivos bash: bash  
 - Ver la primera/ultima parte de la data: head/tail  
 - Remplazar texto: sed  
 - Contar caracteres: wc  
-- Hacer busqeudas en texto con Regex: grep  
+- Hacer búsquedas en texto con Regex: grep  
 
 ## Conceptos
-- Tomatos para alamcenar datos
+- Formatos para almacenar datos
         - CSV y JSON
