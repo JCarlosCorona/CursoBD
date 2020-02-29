@@ -26,6 +26,7 @@ Descripción: Categorías de producto y SKU
 
 | Campo | Detalle |
 | ------------- | ------------- |
+| _id  | ID Único Autogenerado |
 | CategoriaProducto | Categoría al que pertenece el producto |
 | SKU | Código único del producto vendido |
 
