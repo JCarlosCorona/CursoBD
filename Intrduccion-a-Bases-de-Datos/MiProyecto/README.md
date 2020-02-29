@@ -33,11 +33,10 @@ Descripción: Categorías de producto y SKU
 
 ### Pre-requisitos 📋
 
-```
 Descargar: Mongo DB Comppas
 https://downloads.mongodb.com/compass/mongodb-compass-community_1.20.5_amd64.deb
-
-Acceso: mongodb+srv://JCarlosCorona:<password>@cluster0-favba.mongodb.net/test
+```
+Acceso: mongodb+srv://Guest:BemxIKNGIaR0xSk3@cluster0-favba.mongodb.net/test
 Usser: Guest
 Pass: BemxIKNGIaR0xSk3
 ```
