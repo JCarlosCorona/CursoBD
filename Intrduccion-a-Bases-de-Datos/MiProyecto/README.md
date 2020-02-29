@@ -5,6 +5,7 @@ Analizar datos del rendimiento de productos de Google Analytics para extraer ins
 ## Esquema  
 
 **Proyecto.ProductPerformance**  
+Descripción: Rendimiento de los productos del sitio
 
 | Campo | Detalle |
 | ------------- | ------------- |
@@ -20,6 +21,13 @@ Analizar datos del rendimiento de productos de Google Analytics para extraer ins
 | Reembolso | Importe devuelto asociado al producto |
 | SKU | Código único del producto vendido |
 
+**Proyecto.ProductoCategory_SKU**  
+Descripción: Categorías de producto y SKU
+
+| Campo | Detalle |
+| ------------- | ------------- |
+| CategoriaProducto | Categoría al que pertenece el producto |
+| SKU | Código único del producto vendido |
 
 
 ### Pre-requisitos 📋
