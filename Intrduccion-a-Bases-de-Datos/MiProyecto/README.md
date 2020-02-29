@@ -1,6 +1,6 @@
 # Ecommerce Product Analysis
 
-Analizar datos del rendimiento de productos de Google Analytics para extraer insights valiosos y accionables que permitan aumentar el revenue de eCommerce.  
+Analizar datos del rendimiento de productos de Google Analytics para extraer insights valiosos y accionables que permitan aumentar el revenue de un eCommerce.  
 
 ## Esquema  
 
@@ -35,25 +35,21 @@ Pass: BemxIKNGIaR0xSk3
 
 ## Wiki 📖
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+Puedes encontrar mucho más de cómo utilizar este proyecto en su [Wiki](https://github.com/tu/proyecto/wiki)
 
 
 ## Autores ✒️
 
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
+* **José Carlos Corona** - *Trabajo Inicial* - [JCarlosCorona](https://github.com/JCarlosCorona/
+* **Manuel Soto** - *Asesoramiento* - [manu-msr](https://github.com/manu-msr)
 
 
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
+* Muchas Gracias a BEDU y Manu por lo aprendido!!
 
 
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
+⌨️ con ❤️ por [JCarlosCorona](https://github.com/JCarlosCorona/) 😊
