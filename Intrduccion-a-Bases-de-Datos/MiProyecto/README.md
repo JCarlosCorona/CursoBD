@@ -4,14 +4,15 @@ Analizar datos del rendimiento de productos de Google Analytics para extraer ins
 
 ## Esquema
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
-
 ```
-Da un ejemplo
+Descargar: Mongo DB Comppas
+https://downloads.mongodb.com/compass/mongodb-compass-community_1.20.5_amd64.deb
+
+Acceso: mongodb+srv://JCarlosCorona:<password>@cluster0-favba.mongodb.net/test
+
 ```
 
 ## Wiki 📖
