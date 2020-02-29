@@ -18,8 +18,8 @@ Pass: BemxIKNGIaR0xSk3
 - Desactive el filtro de IP por lo que puedes conectarte usando la conexión anterior
 - La ruta de la data es: Proyecto.ProductPerformance
 
-2. Analizar la estructura de los datos para conocer el contexto y poder formular preguntas.
-El esquema de la data es la siguiente:
+2. Analizar la estructura de los datos para conocer el contexto y poder formular preguntas.  
+El esquema de la data es la siguiente:  
 **Proyecto.ProductPerformance**  
 Descripción: Rendimiento de los productos del sitio
 
@@ -47,7 +47,7 @@ Descripción: Rendimiento de los productos del sitio
 
 1. Por cada pregunta, realizar las consultas o ajustes necesarios a los datos para poder responderlas.
 - ¿Qué cantidad de productos se vendieron el el periódo?
-![alt text](https://github.com/adam-p//Users/josecarloscorona/Documents/GitHub/CursoBD/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork "Logo Title Text 1")   
+![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/1.png "Logo Title Text 1")   
 
 - ¿Qué cantidad de productos se vendieron el el periódo?
 - ¿De que fechas es el periodo de datos?
