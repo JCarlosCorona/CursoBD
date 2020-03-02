@@ -39,18 +39,24 @@ Descripción: Rendimiento de los productos del sitio
 
 3. Después, formular preguntas sobre el conjuntos de datos
 - ¿Qué cantidad de productos se vendieron el el periódo?
-- ¿De que fechas es el periodo de datos?
 - ¿Cuanto es el ingreso total del periódo?
 - ¿Cuál es el producto con mayor ingreso?
 - Cuál es el producto más comprado?
 
 
 1. Por cada pregunta, realizar las consultas o ajustes necesarios a los datos para poder responderlas.
-- ¿Qué cantidad de productos se vendieron el el periódo?
-![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/1.png "Logo Title Text 1")   
+- ¿Qué cantidad de productos se vendieron el el periódo?  
+**Respuesta: 901**  
+![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/1.png "Captura de pantalla de Compass MongoDB")   
 
-- ¿Qué cantidad de productos se vendieron el el periódo?
-- ¿De que fechas es el periodo de datos?
-- ¿Cuanto es el ingreso total del periódo?
-- ¿Cuál es el producto con mayor ingreso?
-- Cuál es el producto más comprado?
+- ¿Cuanto es el ingreso total del periódo?  
+**Respuesta: 56265.24**  
+![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/2.png "Captura de pantalla de Compass MongoDB")   
+
+- ¿Cuál es el producto con mayor ingreso?  
+**Respuesta: Google Relaxed Fit Hat Navy**  
+![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/3.png "Captura de pantalla de Compass MongoDB") 
+
+- Cuál es el producto más comprado?  
+**Respuesta: Maze Pen**  
+![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/3.png "Captura de pantalla de Compass MongoDB") 
