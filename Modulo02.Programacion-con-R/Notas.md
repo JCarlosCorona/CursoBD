@@ -17,7 +17,7 @@ Procesar grandes volúmenes de datos
 | Data Conocida | Extraer data, modelos|
 | SQL | Py, R |
 
-# Tipos de Datos en R
+## Tipos de Datos en R
 
 - integer
 - numeric
@@ -28,3 +28,9 @@ Procesar grandes volúmenes de datos
 - Vector: dato lineal, mismo tipo de dato.
 - Matriz: Solo puede contener el mismo tipo de dato.  
 - Data Frame: Tabla con vectores y distintos tipos de datos.  
+
+### Para ejecutar R desde la consula: 
+
+```shell
+cat Ejemplo-01.R | R --no-save
+```
