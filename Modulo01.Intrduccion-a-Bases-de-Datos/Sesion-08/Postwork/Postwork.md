@@ -44,7 +44,7 @@ El esquema de la data es la siguiente:
 - ¿Qué cantidad de productos se vendieron el el periódo?
 - ¿Cuanto es el ingreso total del periódo?
 - ¿Cuál es el producto con mayor ingreso?
-- Cuál es el producto más comprado?
+- ¿Cuál es el producto más comprado?
 
 
 ### 4. Por cada pregunta, realizar las consultas o ajustes necesarios a los datos para poder responderlas.
@@ -60,6 +60,6 @@ El esquema de la data es la siguiente:
 **Respuesta: Google Relaxed Fit Hat Navy**  
 ![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/3.png "Captura de pantalla de Compass MongoDB") 
 
-- Cuál es el producto más comprado?  
+- ¿Cuál es el producto más comprado?  
 **Respuesta: Maze Pen**  
 ![alt text](https://github.com/JCarlosCorona/CursoBD/blob/master/Intrduccion-a-Bases-de-Datos/Sesion-08/Postwork/3.png "Captura de pantalla de Compass MongoDB") 
