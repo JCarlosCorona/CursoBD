@@ -1,0 +1,43 @@
+---
+title: "Reto 3"
+output:
+  pdf_document: default
+  html_notebook: default
+---
+## Dplyr
+
+### OBJETIVO
+- Usar el package dplyr para optimizar codigo 
+- Hacer un recuento de una variable (funcion count) y ordenar por orden alfabetico (funcion arrange)
+
+#### REQUISITOS
+1. Contar con R studio.
+1. Usar la carpeta de trabajo `Sesion03/Reto-03`
+
+#### DESARROLLO
+
+Sobre la tabla de ecobici que ya estamos trabajando, crearemos un comando optimizado de varias ordenes apoyandote de la funcion %>%. La primera orden sera un recuento de las estaciones que hay en cada colonia (hint: count). A continuacion pediremos que se ordenen alfabeticamente por nombre de la Colonia. 
+
+1. Importar el dataframe ecobici
+```{r}
+if (!require("pacman"))
+  install.packages("pacman")
+pacman::p_load(tidyverse,
+               readxl)
+ecobici <- read_excel("ecobici.xls")
+View(ecobici)
+```
+
+2. La primera orden sera un recuento de las estaciones que hay en cada colonia (hint: count).
+```{r}
+ecobici %>% 
+  group_by(Colonia) %>% 
+  summarise(Recuento = n())
+```
+A continuacion pediremos que se ordenen alfabeticamente por nombre de la Colonia. 
+```{r}
+ecobici %>% 
+  group_by(Colonia) %>% 
+  summarise(Recuento = n()) %>% 
+  arrange(Colonia)
+```

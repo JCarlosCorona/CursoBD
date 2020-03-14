@@ -1,0 +1,60 @@
+---
+title: "Reto 5"
+output: html_notebook
+---
+## Funciones, condiciones y loops
+
+### OBJETIVO
+- Usar la funcion for para crear un loop que nos llevara el resultado segun la condicion por la cual estemos filtrando la informacion
+
+#### REQUISITOS
+1. Contar con R studio.
+1. Usar la carpeta de trabajo `Sesion03/Reto-02`
+
+#### DESARROLLO
+### Utilizando el Dataset de airquality.
+
+- Investigar el detalle de cada columna del DataSet.
+
+- Utilizando ciclo For y la sentencia IF/ELSE; 
+    * Contar cuantos días el promedio de velocidad del aire es: Mayor a 7, Menor a 4 y 
+      cuántos registros existen dentro de ese rango(4-7). 
+    
+- Calcular el promedio total de la Columna Temp.
+----
+
+- Investigar el detalle de cada columna del DataSet.
+```{r}
+str(airquality)
+??airquality
+```
+  
+- Utilizando ciclo For y la sentencia IF/ELSE; 
+    * Contar cuantos días el promedio de velocidad del aire es: Mayor a 7, Menor a 4 y 
+      cuántos registros existen dentro de ese rango(4-7). 
+```{r}
+cmayor <- 0 # > 7
+cmenor <- 0 # < 4
+cresto <- 0 # 4-7
+for(i in airquality$Wind){
+  if(i > 7){
+    cmayor <- cmayor + 1
+  }else {
+     if( i < 4){
+       cmenor <- cmenor + 1
+     }else{
+       cresto <- cresto + 1
+     }
+  }
+}
+paste(cmenor, " Menores, ", cmayor, " Mayores, ", cresto, " Entre 4 y 7")
+```
+
+```{r}
+      total <- 0
+      for(i in airquality$Temp){
+        total <- (total + i)
+      }
+      print(total/(nrow(airquality)))
+```
+

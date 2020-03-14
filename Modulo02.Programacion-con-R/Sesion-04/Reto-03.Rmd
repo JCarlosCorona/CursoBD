@@ -1,0 +1,29 @@
+---
+title: "Reto 3"
+output: html_notebook
+---
+## Exploracion de datos
+
+### OBJETIVO
+- Encontrar los diferentes valores de una columna
+
+
+#### REQUISITOS
+1. Contar con R studio.
+1. Usar la carpeta de trabajo `Sesion04/Reto-03`
+
+#### DESARROLLO
+Seguiremos limpiando nuestra tabla. Sabemos que "Tipo" de Ecobici es BIKE, pero sucede entodos los casos? Vamos a ver las posicles opciones de "Tipo".
+
+```{r}
+if (!require("pacman"))
+  install.packages("pacman")
+pacman::p_load(tidyverse,
+               readxl)
+ecobici <- read_excel("ecobici.xls")
+head(ecobici)
+
+unique(ecobici$Tipo)
+
+```
+

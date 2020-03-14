@@ -50,8 +50,28 @@ cat Ejemplo-01.R | R --no-save
 - (): Para usar funciones sobre una variable.
 - []: Para hacer extracciónes sobre una variable
 - <-: Para definir variables
-- class(): Para conocer la clase de una varibale
-- colnames(): Para concocer el nombre de las columnas de un dataset
+- class(): Para conocer la clase de una variable
+- colnames(): Para conocer el nombre de las columnas de un dataset
 - str(): Para conocer la estructura de un objeto
-- ncol(): Para conocer la cantiadad de columnas de un objeto
+- ncol(): Para conocer la cantidad de columnas de un objeto
 - $: para
+
+### IF ELSE
+
+- Si la expresión evaluada se es verdadera, arroja un resultado dependiendo del resultado.
+  
+### FOR
+Se itera sobre un vector, de forma secuencial
+
+### While
+Se evalúa una expresión hasta que la expresión se cumpla.
+
+## Análisis Exploratorió de Datos  
+
+**Pasos:**  
+1. Conocer las dis, observaciones y variables.  
+2. Comprobar los registros vacíos.  
+3. Medición, comparación y descripción: medidas de tendencia central, de dispersión, estadística multivariante.  
+4. Plantear Hipótesis.  
+5. Visualizar para entender la concentración y dispersión de los datos.  
+6. Validar hipótesis. 
