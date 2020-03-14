@@ -25,10 +25,13 @@ Procesar grandes volúmenes de datos
 - character
 - logical
 - factor
+- complex
 
 - Vector: dato lineal, mismo tipo de dato.
-- Matriz: Solo puede contener el mismo tipo de dato.  
+- Matriz: Vectores de más de una dimensión y que solo puede contener el mismo tipo de dato.  
 - Data Frame: Tabla con vectores y distintos tipos de datos.  
+- Lista: 
+- Array: 
 
 ### Para ejecutar R desde la consula: 
 
@@ -42,4 +45,13 @@ cat Ejemplo-01.R | R --no-save
 - Funciónes: cosas que hace un objeto.  
 - Método: función definido dentro de una clase.
 - Instanciación: Materializar un objeto con sus métodos.  
-- 
+
+### Funciónes básicas
+- (): Para usar funciones sobre una variable.
+- []: Para hacer extracciónes sobre una variable
+- <-: Para definir variables
+- class(): Para conocer la clase de una varibale
+- colnames(): Para concocer el nombre de las columnas de un dataset
+- str(): Para conocer la estructura de un objeto
+- ncol(): Para conocer la cantiadad de columnas de un objeto
+- $: para

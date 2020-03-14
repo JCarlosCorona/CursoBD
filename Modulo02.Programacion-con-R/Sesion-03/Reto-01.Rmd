@@ -1,0 +1,39 @@
+---
+title: "Programacion orientada a objetos"
+output: html_notebook
+---
+## OBJETIVO  
+Importación de un dataset
+Cambiar los valores de un objeto
+
+## REQUISITOS  
+Contar con R studio.
+Usar la carpeta de trabajo Sesion02/Reto-01
+
+## DESARROLLO  
+Importamos el dataset de Spotify, desplegaremos su estructura e identifiaremos la variable del tiempo que se encuentra en ms , se realizaran las operaciones necesarias para convertir el valor a minutos
+
+- Carga/Instalacion de las librerias
+```{r}
+if (!require("pacman"))
+  install.packages("pacman")
+pacman::p_load(tidyverse,
+               readr,
+               lubridate)
+```
+
+- Cargar el dataset
+```{r}
+
+spotify <- read_csv("spotify.csv")
+View(spotify)
+
+```
+
+- Mutar los milisegundos en minutos 
+```{r}
+spotify2 <- spotify %>% 
+  mutate(duration_m = (duration_ms / 1000) / 60) %>% 
+  select(duration_ms,duration_m)
+```
+

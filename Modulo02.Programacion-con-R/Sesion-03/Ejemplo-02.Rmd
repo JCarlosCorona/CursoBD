@@ -1,0 +1,53 @@
+---
+title: "Ejemplo 2"
+output: html_notebook
+---
+
+`Data Science` > [`Programacion con R`]
+## Dplyr
+
+### OBJETIVO
+- Aprenderas a cargar un package
+- Aprenderas a usar dplyr
+- Aprenderas a seleccionar y filtrar informacion 
+
+#### REQUISITOS
+1. Contar con R studio.
+1. Usar la carpeta de trabajo `Sesion02/Ejemplo-02`
+
+#### DESARROLLO
+
+
+Cargamos el paquete que nos permitira hacer el ejercicio   
+```{r}
+if (!require("pacman"))
+  install.packages("pacman")
+pacman::p_load(tidyverse,
+               readr)
+```
+
+Vamos a usar la informacion de mtcars, ya disponible en R 
+```{r}
+head(mtcars)
+```
+
+Creamos la variable mtcars para poder hacer operaciones sobre esos datos 
+```{r}
+mtcars <- mtcars 
+```
+
+Selecciona las variables nombre del carro, millas por galon y horse power 
+```{r}
+names <- colnames(mtcars)
+names <- c("modelo",names)
+str(mtcars)
+mtcars2 <- as_tibble(mtcars)
+colnames(mtcars2) <- names
+select(mtcars, 1, mpg, hp) 
+```
+
+
+Filtra por aquellos vehiculos que tengan hp mayor a 200 y su nombre contenga la letra "a" 
+```{r}
+filter(mtcars, hp > 200)
+```
