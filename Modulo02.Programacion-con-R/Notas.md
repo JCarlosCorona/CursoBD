@@ -1,3 +1,4 @@
+# Notas del modulo 2: Programación con R  
 ## BigData
 Procesar grandes volúmenes de datos
 - Volumen
@@ -17,7 +18,7 @@ Procesar grandes volúmenes de datos
 | Data Conocida | Extraer data, modelos|
 | SQL | Py, R |
 
-## Tipos de Datos en R
+### Tipos de Datos en R
 
 - integer
 - numeric
@@ -34,3 +35,11 @@ Procesar grandes volúmenes de datos
 ```shell
 cat Ejemplo-01.R | R --no-save
 ```
+
+## Programación orientada a Objetos
+- Objetos con atributos.
+- Clase: objetos que comparten atributos entre sí.
+- Funciónes: cosas que hace un objeto.  
+- Método: función definido dentro de una clase.
+- Instanciación: Materializar un objeto con sus métodos.  
+- 

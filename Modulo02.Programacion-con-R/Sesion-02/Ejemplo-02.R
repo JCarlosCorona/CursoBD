@@ -18,4 +18,8 @@ View(iris[1,])
 View(iris[1:3,])
 View(iris[-1,])
 
-iris[,1]
+iris[,'Sepal.Length']
+iris$Sepal.Length
+
+iris[,1:2]
+iris[1:3,2:3]
