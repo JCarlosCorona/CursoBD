@@ -1,0 +1,102 @@
+---
+title: "Reto-03"
+output: html_notebook
+---
+## Libreria dplyr
+
+### OBJETIVO
+
+Al final de el `Reto-02` serás capaz de:
+- Leer un dataframe
+- Identificar el tipo de cada columna
+
+### REQUISITOS
+
+1. Completar el prework
+2. R versión 3.6.2 o mayor
+3. R Studio versión 1.2.5033 o mayor 
+4. Git Bash
+
+### INSTRUCCIONES DEL RETO
+
+- Haz un llamado a la libreria dplyr
+- Lee el archivo `Metro_Interstate_Traffic_Volume.csv` y guardalo en df.traffic
+- Ve la estructura del dataframe y los tipos de dato de cada columna
+- Calcula el promedio de la columna traffic_volume y guardala en mean.traffic
+- Selecciona solo las columnas weather_main y traffic_volume
+- Cambia de nombre las columnas: weather_main a clima y traffic_volume a trafico
+- Filtra a las observaciones donde la columna trafico sea mayor o igual a mean.traffic
+- Guarda el dataframe filtrado como df.traffic.filter
+- ¿Cuántos renglones y columnas tiene df.traffic.filter?
+- Con df.traffic.filter, agrupa por clima y saca el min de trafico y max de trafico, guardalo en df.traffic.grouped
+- Agrega una columna a df.traffic.grouped que sea la diferencia entre max y min del grupo
+
+### Desarrollo
+
+- Haz un llamado a la libreria dplyr
+```{r}
+library(dplyr)
+```
+
+- Lee el archivo `Metro_Interstate_Traffic_Volume.csv` y guardalo en df.traffic
+```{r}
+df.traffic <- read.csv("Metro_Interstate_Traffic_Volume.csv")
+```
+
+- Ve la estructura del dataframe y los tipos de dato de cada columna
+```{r}
+str(df.traffic)
+```
+- Calcula el promedio de la columna traffic_volume y guardala en mean.traffic
+```{r}
+df.traffic %>% 
+  mutate(mean.traffic = mean(traffic_volume))
+```
+- Selecciona solo las columnas weather_main y traffic_volume
+```{r}
+df.traffic %>% 
+  select(weather_main,traffic_volume)
+```
+- Cambia de nombre las columnas: weather_main a clima y traffic_volume a trafico
+```{r}
+df.traffic %>% 
+  rename(clime = weather_main, trafico = traffic_volume)
+```
+- Filtra a las observaciones donde la columna trafico sea mayor o igual a mean.traffic
+```{r}
+df.traffic %>% 
+  mutate(mean.traffic = mean(traffic_volume)) %>% 
+  select(weather_main,traffic_volume,mean.traffic ) %>% 
+  rename(clime = weather_main, trafico = traffic_volume) %>% 
+  filter(trafico >= mean.traffic)
+```
+
+- Guarda el dataframe filtrado como df.traffic.filter
+```{r}
+df.traffic.filter <- df.traffic %>% 
+  mutate(mean.traffic = mean(traffic_volume)) %>% 
+  select(weather_main,traffic_volume,mean.traffic ) %>% 
+  rename(clima = weather_main, trafico = traffic_volume) %>% 
+  filter(trafico >= mean.traffic)
+```
+
+- ¿Cuántos renglones y columnas tiene df.traffic.filter?
+```{r}
+dim(df.traffic.filter)
+```
+
+- Con df.traffic.filter, agrupa por clima y saca el min de trafico y max de trafico, guardalo en df.traffic.grouped
+```{r}
+df.traffic.filter %>% 
+  group_by(clima) %>% 
+  summarise(min_tr = min(trafico), max_tr = max(trafico))
+```
+
+- Agrega una columna a df.traffic.grouped que sea la diferencia entre max y min del grupo
+```{r}
+df.traffic.filter %>% 
+  group_by(clima) %>% 
+  summarise(min_tr = min(trafico), max_tr = max(trafico)) %>% 
+  mutate(df.traffic.grouped = max_tr - min_tr)
+```
+
