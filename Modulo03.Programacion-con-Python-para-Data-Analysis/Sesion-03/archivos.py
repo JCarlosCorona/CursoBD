@@ -1,3 +1,5 @@
+import csv
+import json
 import os
 import time
 ## Modelo-Vista-Controlador (MVC)
@@ -41,7 +43,33 @@ def imprime_entradas(entradas, total):
     """
     for e in entradas:
         print("{:60} {:10} {:24}".format(*e))
+        
     print('Total de bytes: {}'.format(total))
+
+def guarda_entradas_csv(entradas, arch_salida_csv):
+    """ 
+    Guarda la lista de las entradas en el arch_salida en formato csv.
+    """
+    with open(arch_salida_csv, 'w', encoding='utf-8') as da:
+        da_csv = csv.writer(da)
+        da_csv.writerow(['Nombre','Tamaño','Fecha'])
+        for e in entradas:
+            da_csv.writerow(e) # e = ['nombre', 123, 'fecha'] 
+
+def guarda_entradas_json(entradas, total, arch_salida_json):
+    """ 
+    Guarda la lista de las entradas en el arch_salida en formato JSON.
+    """
+    with open(arch_salida_json, 'w') as da:
+        json.dump(entradas, da, indent=4)
+
+def guarda_entradas_json2(entradas, total, arch_salida_json2):
+    """ 
+    Guarda la lista de las entradas en el arch_salida en formato JSON usando objetos.
+    """
+    with open(arch_salida_json2, 'w') as da:
+        json.dump(entradas, da, indent=4) ##### TAREA
+
 
 # Contralador: Manipular las funciones del Modelo y la Vista
 def main(): #Función principal
@@ -49,8 +77,14 @@ def main(): #Función principal
     Función principal del script
     """
     ruta = '/Users/josecarlos/Documents/Github/CursoBD/Modulo03.Programacion-con-Python-para-Data-Analysis/Sesion-03'
+    arch_salida_csv = ("salida.csv")
+    arch_salida_json = ("salida.json")
+    arch_salida_json2 = ("salida2.json")
     entradas, total = obtiene_entradas(ruta)
     imprime_entradas(entradas, total)
+    guarda_entradas_csv(entradas, arch_salida_csv)
+    guarda_entradas_json(entradas, total, arch_salida_json)
+    guarda_entradas_json2(entradas, total, arch_salida_json2)
 
 if __name__ == "__main__": # el script es el programa principal?
     main()

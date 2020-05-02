@@ -1,2 +1,0 @@
-Funciones.ipynb
-README.md
