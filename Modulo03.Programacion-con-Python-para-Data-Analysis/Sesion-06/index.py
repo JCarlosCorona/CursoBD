@@ -3,56 +3,39 @@ import lc
 
 @route('/hola')
 def hola():
-    '''
-    Función principal del script
-    '''
+    '''Función principal del script'''
     return 'Hola Python'
+
+@route('/json')
+def json():
+    '''Función para responder las peticiones GET /'''
+
+    # Obtener la lista de archivos
+    carpeta = lc.Carpeta('.')
+    carpeta.obtiene_entradas()
+
+    # Devuelve resultado
+    return {'resultado': carpeta.entradas}
 
 @route('/')
 def index():
-    '''
-    Función para esponder la petición GET /
-    '''
+    '''Función para responder las peticiones GET /'''
+
     # Leer el contenido de index.html
     with open('index.html') as da:
         pagina = da.read()
-    
-    # Obtener la lista de archivos
+
+    # Obtener lista de archivos
     carpeta = lc.Carpeta('.')
     carpeta.obtiene_entradas()
-    # Integrar la lista con el html
-    tabla = '<table>\n'
-    for file in carpeta.entradas:
-        linea = '<tr>'
-        tabla += linea
-    tabla += '</table>\n'
-    # Insertando la tabla en la página
-    pagina = pagina.replace('{TABLA}',tabla)
 
-    return pagina
-
-#-----
-@route('/json')
-def apijson():
-    '''
-    Atiende la peticion GET  /json
-    '''
-    # Leer el contenido de index.html
-    with open('index.html') as da:
-        pagina = da.read()
-    
-    # Obtener la lista de archivos
-    carpeta = lc.Carpeta('.')
-    carpeta.obtiene_entradas()
-    # Integrar la lista con el html
-    tabla = '<table>\n'
+    #Integrar lista con html
+    tablaHTML = '<table>'
     for file in carpeta.entradas:
         linea = '<tr>'
         for column in file:
-            linea += '<td>{0}<td>'.format(column)
-        linea += '</tr>'
-        tablaHTML = linea
-    tablaHTML = '</table>'
+            linea += linea
+        tablaHTML += '</table>'
 
     # Devuelve el resultado
     return pagina.format(tablaHTML)
