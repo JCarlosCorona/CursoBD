@@ -22,8 +22,8 @@ def index():
     carpeta.obtiene_entradas()
     # Integrar la lista con el html
     tabla = '<table>\n'
-    for ent in carpeta.entradas:
-        linea = '<tr><td>{}</td><td>{}</td><td>{}</td></tr>\n'.format(*ent)
+    for file in carpeta.entradas:
+        linea = '<tr>'
         tabla += linea
     tabla += '</table>\n'
     # Insertando la tabla en la página
@@ -31,11 +31,30 @@ def index():
 
     return pagina
 
+#-----
 @route('/json')
 def apijson():
     '''
     Atiende la peticion GET  /json
     '''
-    return { 'Archivos':[{'mensaje': 'Hola JSON'},{'mensaje': 'Hola JSON'}]}
+    # Leer el contenido de index.html
+    with open('index.html') as da:
+        pagina = da.read()
+    
+    # Obtener la lista de archivos
+    carpeta = lc.Carpeta('.')
+    carpeta.obtiene_entradas()
+    # Integrar la lista con el html
+    tabla = '<table>\n'
+    for file in carpeta.entradas:
+        linea = '<tr>'
+        for column in file:
+            linea += '<td>{0}<td>'.format(column)
+        linea += '</tr>'
+        tablaHTML = linea
+    tablaHTML = '</table>'
+
+    # Devuelve el resultado
+    return pagina.format(tablaHTML)
 
 run(host = 'localhost', port = 8080, debug = True)
