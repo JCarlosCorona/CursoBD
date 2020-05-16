@@ -28,7 +28,6 @@ Descripción: Categorías de producto y SKU
 | CategoriaProducto | Categoría al que pertenece el producto |
 | SKU | Código único del producto vendido |
 
-
 ### Pre-requisitos 📋
 Descargar: Mongo DB Comppas
 https://downloads.mongodb.com/compass/mongodb-compass-community_1.20.5_amd64.deb
@@ -38,9 +37,8 @@ Usser: Guest
 Pass: BemxIKNGIaR0xSk3
 ```
 
-
 ## Autores ✒️
-* **José Carlos Corona** - *Trabajo Inicial* - [JCarlosCorona](https://github.com/JCarlosCorona/
+* **José Carlos Corona** - *Trabajo Inicial* - [JCarlosCorona](https://github.com/JCarlosCorona)
 * **Manuel Soto** - *Asesoramiento* - [manu-msr](https://github.com/manu-msr)
 * **Ricardo Torres** - *Asesoramiento* - [rctorr](https://github.com/rctorr)
 
