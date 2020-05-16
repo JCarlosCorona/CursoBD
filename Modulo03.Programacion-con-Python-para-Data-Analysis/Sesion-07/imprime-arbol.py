@@ -6,7 +6,7 @@ def obtiene_pagina(url):
     """Obtiene la página desde la URL
 
     Arguments:
-        url {[type]} -- [url de la página]
+        url {[string]} -- [url de la página]
     """
     with open(url) as html:
         pagina= html.read()
